@@ -1,5 +1,7 @@
 Link to live demo: https://garrettsiegel.github.io/Ftechfolks
 
+*Screenshots of each page are in the screenshots folder
+
 Notes for 08/09 meeting
 - No responsive CSS has been created yet
 - Needs active link CSS in navbar and hamburger menu fix
