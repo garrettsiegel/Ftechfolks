@@ -1,10 +1,10 @@
 Link to live demo: https://garrettsiegel.github.io/Ftechfolks
 
-*Screenshots of each page are in the screenshots folder
+08/12 Changes:
 
-Notes for 08/09 meeting
-- No responsive CSS has been created yet
-- Needs active link CSS in navbar and hamburger menu fix
-- Need info for Services page
-- Questions about Fintech News page / backend approach
-- What other content will be needed for Case Studies page
+- Pages made responsive in design
+- Fixed top nav bar issues and added active link highlight
+- Added provided text for Services and Case Studies pages
+- Built Services page design
+- Added site favicon
+- Added Contact Us page form validation and regex
