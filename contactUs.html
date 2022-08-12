@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ftechfolk</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="index.html"><img src="./images/logo/ftechfolk-logo.png" alt="Ftechfolk logo"></a>
+            </div>
+            <div class="nav-main">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="whyUs.html" class="nav-link">Why Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="advisory.html" class="nav-link">Advisory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sector.html" class="nav-link">Sector</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="caseStudies.html" class="nav-link">Case Studies</a>
+                    </li>
+                    <li class="nav-item" id="active">
+                        <a href="contactUs.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <div class="hamburger-flex">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="contactus-section1">
+        <div class="contactus-section1-wrapper">
+            <div class="contactus-section1-L">
+                <h2>Contact Us</h2>
+                <p>Ftechfolk are fully committed to helping as many people / clients as possible in the drive to create a fairer global banking market.</p>
+                <p>If you are a potential candidate looking to discuss your career progression or a Fintech in need of guidance or assistance, we are always pleased to speak with you.</p>
+                <p>Please complete the contact form below with the relative information and we will ensure a prompt response.</p>
+            </div>
+            <div class="contactus-section1-R">
+                <!-- UNCOMMENT THIS TO CAPTURE EMAIL DATA ON SUBMIT -->
+                <!-- <form action="#" method="post"> -->
+                <!-- COMMENT THIS OUT TO CAPTURE EMAIL DATA ON SUBMIT -->
+                <form onsubmit="window.location.reload()">
+                    
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="user_name" required>
+                    <br>
+
+                    <label for="company">Company Details (if relevant):</label><br>
+                    <input type="text" id="company" name="company"><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+
+                    <p id="form-comment1">Your Contact Details -</p>
+
+                    <label for="tel">Telephone:</label><br>
+                    <input type="text" id="tel" name="tel" required><br>
+
+                    <label for="mobile">Mobile:</label><br>
+                    <input type="text" id="mobile" name="mobile" required><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="mail" name="user_email" required><br>
+
+                    <p id="form-comment2">(If leaving a contact number please specify a convenient time for you to speak)</p>
+                    <div class="submitbutton">
+                        <button type="submit" id="button-v1">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>  
+    </section>
+
+    
+    <footer>
+        <div class="footer">
+
+            <div class="footer-nav">
+
+                <div class="footer-logo">
+                    <a href="index.html"><img src="./images/logo/ftechfolk-logo.png" alt="Ftechfolk logo"></a>
+                </div>
+                
+                <ul class="footer-menu">
+                    <li class="footer-nav-item">
+                        <a href="whyUs.html" class="nav-link">Why Us</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="advisory.html" class="nav-link">Advisory</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="sector.html" class="nav-link">Sector</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="caseStudies.html" class="nav-link">Case Studies</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="contactUs.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="footer-credits">
+                <p> 2022. Ftechfolk - All Rights Reserved.</p>
+            </div>
+
+        </div>
+        
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+  </body>
+</html>
