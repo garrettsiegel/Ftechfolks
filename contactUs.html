@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ftechfolk</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,17 +35,17 @@
                     <li class="nav-item">
                         <a href="caseStudies.html" class="nav-link">Case Studies</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="fintechNews.html" class="nav-link">Fintech News</a>
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="active">
                         <a href="contactUs.html" class="nav-link">Contact Us</a>
                     </li>
                 </ul>
                 <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                    <div class="hamburger-flex">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    
                 </div>
             </div>
         </nav>
@@ -60,31 +61,36 @@
                 <p>Please complete the contact form below with the relative information and we will ensure a prompt response.</p>
             </div>
             <div class="contactus-section1-R">
-                <form action="submit">
-
+                <!-- UNCOMMENT THIS TO CAPTURE EMAIL DATA ON SUBMIT -->
+                <!-- <form action="#" method="post"> -->
+                <!-- COMMENT THIS OUT TO CAPTURE EMAIL DATA ON SUBMIT -->
+                <form onsubmit="window.location.reload()">
+                    
                     <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name"><br>
+                    <input type="text" id="name" name="user_name" required>
+                    <br>
 
                     <label for="company">Company Details (if relevant):</label><br>
                     <input type="text" id="company" name="company"><br>
 
                     <label for="message">Message:</label><br>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
 
                     <p id="form-comment1">Your Contact Details -</p>
 
                     <label for="tel">Telephone:</label><br>
-                    <input type="text" id="tel" name="tel"><br>
+                    <input type="text" id="tel" name="tel" required><br>
 
-                    <label for="mob">Mobile:</label><br>
-                    <input type="text" id="mob" name="mob"><br>
+                    <label for="mobile">Mobile:</label><br>
+                    <input type="text" id="mobile" name="mobile" required><br>
 
                     <label for="email">Email:</label><br>
-                    <input type="text" id="email" name="email"><br>
+                    <input type="email" id="mail" name="user_email" required><br>
 
                     <p id="form-comment2">(If leaving a contact number please specify a convenient time for you to speak)</p>
-
-                    <button type="submit" id="button-v1">Submit</button>
+                    <div class="submitbutton">
+                        <button type="submit" id="button-v1">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>  
@@ -117,9 +123,6 @@
                         <a href="caseStudies.html" class="nav-link">Case Studies</a>
                     </li>
                     <li class="footer-nav-item">
-                        <a href="fintechNews.html" class="nav-link">Fintech News</a>
-                    </li>
-                    <li class="footer-nav-item">
                         <a href="contactUs.html" class="nav-link">Contact Us</a>
                     </li>
                 </ul>
@@ -134,7 +137,7 @@
         
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="index.js"></script>
   </body>
 </html>
