@@ -1,5 +1,5 @@
 Link to live demo: https://garrettsiegel.github.io/Ftechfolks
 
-08/15 Changes:
+08/16 Changes:
 
-- Copy changes made from email request
+- Edits made from latest email request
